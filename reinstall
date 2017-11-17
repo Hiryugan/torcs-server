@@ -1,0 +1,31 @@
+sudo rm -rf /usr/local/lib/torcs
+rm -rf /usr/local/share/games/torcs/
+
+make clean 
+make distclean
+./configure
+make
+sudo make install 
+make datainstall
+
+distance_raced
+fuel
+
+opponents
+distances_from_edge
+
+rpm
+speed x
+speed y
+speed z
+
+distance_from_center
+angle
+wheel_velocities
+focused_dist_from_edge
+
+accel
+brake
+gear
+steer
+clutch
