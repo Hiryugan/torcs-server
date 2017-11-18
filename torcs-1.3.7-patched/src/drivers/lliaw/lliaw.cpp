@@ -18,8 +18,51 @@
  ***************************************************************************/
 
 
+
 #include "berniw.h"
 
+// added by gab
+
+#include <iostream>
+#include <iomanip>
+#include <ctime>
+#include <sstream>
+#include <cstring>
+#include <stdio.h>
+
+#include "sensors.h"
+#include "SimpleParser.h"
+#include "CarControl.h"
+#include "ObstacleSensors.h"
+#define NBBOTS 10
+
+double __SENSORS_RANGE__;
+#define __FOCUS_RANGE__ 200
+#define __NOISE_STD__ 0.1
+#define __OPP_NOISE_STD__ 0.02
+#define __FOCUS_NOISE_STD__ 0.01
+
+using namespace std;
+static double normRand(double avg,double std);
+
+static tdble oldAccel[NBBOTS];
+static tdble oldBrake[NBBOTS];
+static tdble oldSteer[NBBOTS];
+static tdble oldClutch[NBBOTS];
+static tdble prevDist[NBBOTS];
+static tdble distRaced[NBBOTS];
+
+static int oldFocus[NBBOTS];//ML
+static int oldGear[NBBOTS];
+static tTrack	*curTrack;
+
+
+static Sensors *trackSens[NBBOTS];
+static ObstacleSensors *oppSens[NBBOTS];
+static Sensors *focusSens[NBBOTS];//ML
+static float trackSensAngle[NBBOTS][19];
+
+// added by gab
 
 // Function prototypes.
 static void initTrack(int index, tTrack* track, void *carHandle, void **carParmHandle, tSituation * situation);
@@ -97,6 +140,7 @@ static void shutdown(int index) {
 // Initialize track data, called for every selected driver.
 static void initTrack(int index, tTrack* track, void *carHandle, void **carParmHandle, tSituation * situation)
 {
+	curTrack = track;
 	if ((myTrackDesc != NULL) && (myTrackDesc->getTorcsTrack() != track)) {
 		delete myTrackDesc;
 		myTrackDesc = NULL;
@@ -157,12 +201,41 @@ static void newRace(int index, tCarElt* car, tSituation *situation)
 	mycar[index-1] = new MyCar(myTrackDesc, car, situation);
 
 	currenttime = situation->currentTime;
+
+ for (int i = 0; i < 19; ++i) {
+        trackSensAngle[index][i] = -90 + 10.0*i;
+        std::cout << "trackSensAngle[" << i << "] " << trackSensAngle[index][i] << std::endl;
+    }
+
+	focusSens[index] = new Sensors(car, 5);//ML
+	for (int i = 0; i < 5; ++i) {//ML
+		focusSens[index]->setSensor(i,(car->_focusCmd)+i-2.0,200);//ML
+	}//ML
+
+    __SENSORS_RANGE__ = 200;
+	printf("after1");
+    // Initialization of track sensors
+    trackSens[index] = new Sensors(car, 19);
+	printf("after2");
+    for (int i = 0; i < 19; ++i) {
+    	trackSens[index]->setSensor(i,trackSensAngle[index][i],__SENSORS_RANGE__);
+	}
+    // Initialization of opponents sensors
+    oppSens[index] = new ObstacleSensors(36, curTrack, car, situation, (int) __SENSORS_RANGE__);
 }
 
 
 // Controls the car.
 static void drive(int index, tCarElt* car, tSituation *situation)
 {
+	// added by gab
+	float dist_to_middle = 2*car->_trkPos.toMiddle/(car->_trkPos.seg->width);
+	//cout << " sono prima di angle2" << endl;	
+	float angle2 =  RtTrackSideTgAngleL(&(car->_trkPos)) - car->_yaw;
+	//cout << "sono dopo angle2" << endl;
+	NORM_PI_PI(angle2);
+	// end of added by gab
+	
 	tdble angle;
 	tdble brake;
 	tdble b1;							// Brake value in case we are to fast HERE and NOW.
@@ -457,6 +530,181 @@ static void drive(int index, tCarElt* car, tSituation *situation)
 
 	if (myc->tr_mode == 0) car->_steerCmd = steer;
 	car->_clutchCmd = getClutch(myc, car);
+
+	/* added by gab */
+
+//-----------------------------------------------
+//cout << "inizio a vedere i sensori" << endl;
+float trackSensorOut[19];
+	float focusSensorOut[5];//ML
+    if (dist_to_middle<=1.0 && dist_to_middle >=-1.0 )
+    {
+        trackSens[index]->sensors_update();
+		for (int i = 0; i < 19; ++i)
+        {
+            trackSensorOut[i] = trackSens[index]->getSensorOut(i);
+            if (getNoisy())
+            	trackSensorOut[i] *= normRand(1,__NOISE_STD__);
+        }
+	//cout << "mark1" << endl;
+		focusSens[index]->sensors_update();//ML
+		if ((car->_focusCD <= car->_curLapTime + car->_curTime)//ML Only send focus sensor reading if cooldown is over
+			&& (car->_focusCmd != 360))//ML Only send focus reading if requested by client
+		{//ML
+			for (int i = 0; i < 5; ++i)
+			{
+				focusSensorOut[i] = focusSens[index]->getSensorOut(i);
+				if (getNoisy())
+					focusSensorOut[i] *= normRand(1,__FOCUS_NOISE_STD__);
+			}
+			car->_focusCD = car->_curLapTime + car->_curTime + 1.0;//ML Add cooldown [seconds]
+		}//ML
+		else//ML
+		{//ML
+			for (int i = 0; i < 5; ++i)//ML
+			    focusSensorOut[i] = -1;//ML During cooldown send invalid focus reading
+		}//ML
+    }
+    else
+    {
+	//cout << "mark2" << endl;
+        for (int i = 0; i < 19; ++i)
+        {
+            trackSensorOut[i] = -1;
+        }
+		for (int i = 0; i < 5; ++i)
+		{
+			focusSensorOut[i] = -1;
+		}
+    }
+
+	//cout << "mark3" << endl;
+    // update the value of opponent sensors
+    float oppSensorOut[36];
+    oppSens[index]->sensors_update(situation);
+    for (int i = 0; i < 36; ++i)
+    {
+        oppSensorOut[i] = oppSens[index]->getObstacleSensorOut(i);
+        if (getNoisy())
+        	oppSensorOut[i] *= normRand(1,__OPP_NOISE_STD__);
+    }
+
+	//cout << "mark4" << endl;
+    float wheelSpinVel[4];
+    for (int i=0; i<4; ++i)
+    {
+        wheelSpinVel[i] = car->_wheelSpinVel(i);
+    }
+
+    if (prevDist[index]<0)
+    {
+	prevDist[index] = car->race.distFromStartLine;
+    }
+
+	//cout << "mark5" << endl;
+    float curDistRaced = car->race.distFromStartLine - prevDist[index];
+    prevDist[index] = car->race.distFromStartLine;
+    if (curDistRaced>100)
+    {
+	curDistRaced -= curTrack->length;
+    }
+    if (curDistRaced<-100)
+    {
+	curDistRaced += curTrack->length;
+    }
+
+    distRaced[index] += curDistRaced;
+
+	/*------------------------------------------------*/
+//cout << "inizio stringify" << endl;
+		string stateString;
+stateString = "";
+stateString +=  SimpleParser::stringify("accel", car->_accelCmd);
+stateString +=  SimpleParser::stringify("brake", car->_brakeCmd);
+stateString +=  SimpleParser::stringify("gear", car->_gearCmd);
+stateString += SimpleParser::stringify("gear2", car->_gear);
+stateString +=  SimpleParser::stringify("steer", car->_steerCmd);
+stateString +=  SimpleParser::stringify("clutch", car->_clutchCmd);
+stateString +=  SimpleParser::stringify("curTime", (float)car->_curTime);
+//cout << "entro in angle" << endl;    
+stateString +=  SimpleParser::stringify("angle", angle);
+//cout << "finito angle" << endl;
+    stateString +=  SimpleParser::stringify("angle2", angle2);
+    stateString += SimpleParser::stringify("curLapTime", float(car->_curLapTime));
+    if (getDamageLimit())
+	    stateString += SimpleParser::stringify("damage", car->_dammage);
+    else{
+	//cout << "before fake damage" << endl;
+	    stateString += SimpleParser::stringify("damage", car->_fakeDammage);
+  //  cout << "after fake damage" << endl;
+}
+stateString += SimpleParser::stringify("distFromStart", car->race.distFromStartLine);
+    stateString += SimpleParser::stringify("distRaced", distRaced[index]);
+    stateString += SimpleParser::stringify("fuel", car->_fuel);
+
+    stateString += SimpleParser::stringify("lastLapTime", float(car->_lastLapTime));
+	// not found on this file
+//cout << "before race pos" << endl;
+    stateString += SimpleParser::stringify("racePos", car->race.pos);
+//cout << "after race pos" << endl;
+// so we add
+//stateString += SimpleParser::stringify("racePos", 0);
+    stateString += SimpleParser::stringify("opponents", oppSensorOut, 36);
+    stateString += SimpleParser::stringify("rpm", car->_enginerpm*10);
+    stateString += SimpleParser::stringify("speedX", float(car->_speed_x  * 3.6));
+//cout << "before z z" << endl;
+    stateString += SimpleParser::stringify("speedY", float(car->_speed_y  * 3.6));
+//cout << "before z z" << endl;
+// un altro da guardare    
+stateString += SimpleParser::stringify("speedZ", float(car->_speed_z  * 3.6));
+    stateString += SimpleParser::stringify("track", trackSensorOut, 19);
+    stateString += SimpleParser::stringify("trackPos", dist_to_middle);
+    stateString += SimpleParser::stringify("wheelSpinVel", wheelSpinVel, 4);
+    stateString += SimpleParser::stringify("z", car->_pos_Z  - RtTrackHeightL(&(car->_trkPos)));
+	stateString += SimpleParser::stringify("focus", focusSensorOut, 5);//ML
+
+    char line[5000];
+    	sprintf(line,"%s\n",stateString.c_str());
+//	printf("%s", line);
+
+	time_t rawtime;
+	struct tm * timeinfo;
+
+	time (&rawtime);
+	timeinfo = localtime (&rawtime);
+	char cstr[512];    
+
+	//strftime(cstr, sizeof(cstr), "%a %b %d %H:%M:%S %Y", timeinfo);
+	strftime(cstr, sizeof(cstr), "_%F_%H-%M-%S", timeinfo);
+	
+    	 char rootd[] = "/home/hiryugan/Documents/torcs-server/results/manual";
+
+	strcat(rootd, cstr);
+	//printf("%s", fname);
+
+	FILE *fff;
+	static long int first = 0;
+	static char fname[512] = "";
+	static char to_write[2500000]="";
+    strcat(to_write, line);
+    if(first == 0){
+		strcat(fname, rootd);
+		//printf("%s",fname);
+		//fflush(stdin);
+		//fff = fopen (fname,"a");
+		//	fprintf(fff, "swe");
+	}
+    if (first % 99 == 0){
+        printf("saved %ld\n", first);
+        fff = fopen (fname,"a");
+        fprintf(fff,"%s",to_write);
+        fclose(fff);
+        to_write[0] = '\0';
+    }
+    first++;
+	//else{fff = fopen (fname,"a");
+	//	fprintf(fff, "ciao");}
+
 }
 
 
@@ -516,4 +764,21 @@ float getClutch(MyCar* myc, tCarElt* car)
 			return clutcht;
 		}
 	}
+}
+
+
+double normRand(double avg,double std)
+{
+    double x1, x2, w, y1, y2;
+
+    do {
+        x1 = 2.0 * rand()/(double(RAND_MAX)) - 1.0;
+        x2 = 2.0 * rand()/(double(RAND_MAX)) - 1.0;
+        w = x1 * x1 + x2 * x2;
+    } while ( w >= 1.0 );
+
+    w = sqrt( (-2.0 * log( w ) ) / w );
+    y1 = x1 * w;
+    y2 = x2 * w;
+    return y1*std + avg;
 }

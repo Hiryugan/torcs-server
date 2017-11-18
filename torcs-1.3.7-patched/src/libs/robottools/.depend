@@ -1,5 +1,5 @@
 rttrack.o: rttrack.cpp /usr/include/stdc-predef.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/portability.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/portability.h \
  /usr/include/stdlib.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -26,7 +26,7 @@ rttrack.o: rttrack.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/cpu_defines.h \
  /usr/include/string.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/config.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/config.h \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/huge_val.h \
@@ -36,7 +36,7 @@ rttrack.o: rttrack.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/nan.h \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tgf.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tgf.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
@@ -59,14 +59,14 @@ rttrack.o: rttrack.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/param.h /usr/include/linux/param.h \
  /usr/include/x86_64-linux-gnu/asm/param.h \
  /usr/include/asm-generic/param.h /usr/include/assert.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/osspec.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/car.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/track.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/linalg_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/v2_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/v3_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/v4_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/straight2_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/osspec.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/car.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/track.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/linalg_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/v2_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/v3_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/v4_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/straight2_t.h \
  /usr/include/plib/sg.h /usr/include/plib/ul.h /usr/include/ctype.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -80,7 +80,7 @@ rttrack.o: rttrack.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/robottools.h
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/robottools.h
 rttelem.o: rttelem.cpp /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -106,8 +106,8 @@ rttelem.o: rttelem.cpp /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/telemetry.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tgf.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/telemetry.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tgf.h \
  /usr/include/x86_64-linux-gnu/sys/param.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h \
@@ -140,15 +140,15 @@ rttelem.o: rttelem.cpp /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/nan.h \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/osspec.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/robottools.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/car.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/track.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/linalg_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/v2_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/v3_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/v4_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/straight2_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/osspec.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/robottools.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/car.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/track.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/linalg_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/v2_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/v3_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/v4_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/straight2_t.h \
  /usr/include/plib/sg.h /usr/include/plib/ul.h /usr/include/ctype.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -162,5 +162,5 @@ rttelem.o: rttelem.cpp /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/portability.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/config.h
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/portability.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/config.h

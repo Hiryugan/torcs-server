@@ -1,1 +1,1 @@
-/home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/simuconfig.h
+/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/simuconfig.h

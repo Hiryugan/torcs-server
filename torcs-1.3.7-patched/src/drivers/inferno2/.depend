@@ -32,7 +32,7 @@ inferno2.o: inferno2.cpp /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/nan.h \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tgf.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tgf.h \
  /usr/include/x86_64-linux-gnu/sys/param.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h \
@@ -56,14 +56,14 @@ inferno2.o: inferno2.cpp /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/cpu_defines.h \
  /usr/include/string.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/osspec.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/track.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/linalg_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/v2_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/v3_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/v4_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/straight2_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/car.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/osspec.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/track.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/linalg_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/v2_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/v3_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/v4_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/straight2_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/car.h \
  /usr/include/plib/sg.h /usr/include/plib/ul.h /usr/include/ctype.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -77,13 +77,13 @@ inferno2.o: inferno2.cpp /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/raceman.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/graphic.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/simu.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/robot.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/robottools.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/portability.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/config.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/raceman.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/graphic.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/simu.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/robot.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/robottools.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/portability.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/config.h \
  common.h
 common.o: common.cpp /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -119,7 +119,7 @@ common.o: common.cpp /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/nan.h \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tgf.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tgf.h \
  /usr/include/x86_64-linux-gnu/sys/param.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h \
@@ -143,14 +143,14 @@ common.o: common.cpp /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/cpu_defines.h \
  /usr/include/string.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/osspec.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/track.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/linalg_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/v2_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/v3_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/v4_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/tmath/straight2_t.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/car.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/osspec.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/track.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/linalg_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/v2_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/v3_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/v4_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/tmath/straight2_t.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/car.h \
  /usr/include/plib/sg.h /usr/include/plib/ul.h /usr/include/ctype.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -164,9 +164,9 @@ common.o: common.cpp /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/raceman.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/graphic.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/simu.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/robot.h \
- /home/hiryugan/Documents/torcs/torcs-server/torcs-1.3.7-patched/export/include/robottools.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/raceman.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/graphic.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/simu.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/robot.h \
+ /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/robottools.h \
  common.h

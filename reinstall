@@ -8,24 +8,6 @@ make
 sudo make install 
 make datainstall
 
-distance_raced
-fuel
+---
+sensors.cpp SimpleParser.cpp CarControl.cpp ObstacleSensors.cpp 
 
-opponents
-distances_from_edge
-
-rpm
-speed x
-speed y
-speed z
-
-distance_from_center
-angle
-wheel_velocities
-focused_dist_from_edge
-
-accel
-brake
-gear
-steer
-clutch

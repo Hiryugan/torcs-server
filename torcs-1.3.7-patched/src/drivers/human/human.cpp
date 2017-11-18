@@ -171,7 +171,7 @@ shutdown(int index)
  *
  */
 
-
+/*
 static string 
 stringify(string tag, float value)
 {
@@ -201,37 +201,7 @@ stringify(string tag, float *value, int size)
 	STR << ")";
 	return STR.str();
 }
-/*
-static string 
-stringify(string tag, float value)
-{
-	ostringstream STR;
-	STR << value << ",";
-	return STR.str();
-}
-
-static string 
-stringify(string tag, int value)
-{
-	ostringstream STR;
-	STR << value << ",";
-	return STR.str();
-}
-
-static string 
-stringify(string tag, float *value, int size)
-{
-	ostringstream STR;
-	//STR << "(" << tag;
-	for (int i = 0; i < size; ++i) 
-	{
-		STR << value[i] << ",";
-	}
-	//STR << ")";
-	return STR.str();
-}
 */
-
 static int
 InitFuncPt(int index, void *pt)
 {
@@ -1140,41 +1110,41 @@ static void drive_mt(int index, tCarElt* car, tSituation *s)
 
 	if (HCtx[idx]->autoClutch && car->_clutchCmd == 0.0f)
 		car->_clutchCmd = getAutoClutch(idx, car->_gear, car->_gearCmd, car);
-
+/*
 		string stateString;
-stateString = "move_mt"; 
-stateString +=  /*SimpleParser*/stringify("accel", car->_accelCmd);
-stateString +=  /*SimpleParser*/stringify("brake", car->_brakeCmd);
-stateString +=  /*SimpleParser*/stringify("gear", car->_gearCmd);
-stateString +=  /*SimpleParser*/stringify("steer", car->_steerCmd);
-stateString +=  /*SimpleParser*/stringify("clutch", car->_clutchCmd);
+stateString = "move_mt"; */
+//stateString +=  /*SimpleParser*/stringify("accel", car->_accelCmd);
+//stateString +=  /*SimpleParser*/stringify("brake", car->_brakeCmd);
+//stateString +=  /*SimpleParser*/stringify("gear", car->_gearCmd);
+//stateString +=  /*SimpleParser*/stringify("steer", car->_steerCmd);
+//stateString +=  /*SimpleParser*/stringify("clutch", car->_clutchCmd);
 //stateString =  /*SimpleParser*/stringify("curTime", car->_curTime);
     //stateString =  /*SimpleParser*/stringify("angle", angle);
-    stateString += /*SimpleParser*/stringify("curLapTime", float(car->_curLapTime));
-    if (getDamageLimit())
-	    stateString += /*SimpleParser*/stringify("damage", car->_dammage);
-    else
-	    stateString += /*SimpleParser*/stringify("damage", car->_fakeDammage);
-    stateString += /*SimpleParser*/stringify("distFromStart", car->race.distFromStartLine);
+ //   stateString += /*SimpleParser*/stringify("curLapTime", float(car->_curLapTime));
+   // if (getDamageLimit())
+//	    stateString += /*SimpleParser*/stringify("damage", car->_dammage);
+ //   else
+	  //  stateString += /*SimpleParser*/stringify("damage", car->_fakeDammage);
+   // stateString += /*SimpleParser*/stringify("distFromStart", car->race.distFromStartLine);
     //stateString += /*SimpleParser*/stringify("distRaced", distRaced[index]);
-    stateString += /*SimpleParser*/stringify("fuel", car->_fuel);
-    stateString += /*SimpleParser*/stringify("gear", car->_gear);
-    stateString += /*SimpleParser*/stringify("lastLapTime", float(car->_lastLapTime));
-    stateString += /*SimpleParser*/stringify("racePos", car->race.pos);
-    stateString += /*SimpleParser*/stringify("rpm", car->_enginerpm*10);
-    stateString += /*SimpleParser*/stringify("speedX", float(car->_speed_x  * 3.6));
-    stateString += /*SimpleParser*/stringify("speedY", float(car->_speed_y  * 3.6));
-    stateString += /*SimpleParser*/stringify("speedZ", float(car->_speed_z  * 3.6));
+   // stateString += /*SimpleParser*/stringify("fuel", car->_fuel);
+   // stateString += /*SimpleParser*/stringify("gear", car->_gear);
+   // stateString += /*SimpleParser*/stringify("lastLapTime", float(car->_lastLapTime));
+   // stateString += /*SimpleParser*/stringify("racePos", car->race.pos);
+   // stateString += /*SimpleParser*/stringify("rpm", car->_enginerpm*10);
+   // stateString += /*SimpleParser*/stringify("speedX", float(car->_speed_x  * 3.6));
+   // stateString += /*SimpleParser*/stringify("speedY", float(car->_speed_y  * 3.6));
+   // stateString += /*SimpleParser*/stringify("speedZ", float(car->_speed_z  * 3.6));
     //stateString += /*SimpleParser*/stringify("track", trackSensorOut, 19);
     //stateString += /*SimpleParser*/stringify("trackPos", dist_to_middle);
     //stateString += /*SimpleParser*/stringify("wheelSpinVel", wheelSpinVel, 4);
     //stateString += /*SimpleParser*/stringify("z", car->_pos_Z  - RtTrackHeightL(&(car->_trkPos)));
 //	stateString += /*SimpleParser*/stringify("focus", focusSensorOut, 5);//ML
 
-    char line[5000];
+  //  char line[5000];
 	//printf("e poi in move_mt");
     	//sprintf(line,"%s",stateString.c_str());
-	printf("wee"); 
+//	printf("wee"); 
 	/*printf("%s", line);
 	fflush(stdin);
 	FILE *fff = fopen ("/home/hiryugan/Documents/torcs/torcs-server/we.txt","a");
@@ -1398,35 +1368,35 @@ static void drive_at(int index, tCarElt* car, tSituation *s)
 
 		string stateString;
 stateString = "";
-stateString +=  /*SimpleParser*/stringify("accel", car->_accelCmd);
-stateString +=  /*SimpleParser*/stringify("brake", car->_brakeCmd);
-stateString +=  /*SimpleParser*/stringify("gear", car->_gearCmd);
-stateString += /*SimpleParser*/stringify("gear2", car->_gear);
-stateString +=  /*SimpleParser*/stringify("steer", car->_steerCmd);
-stateString +=  /*SimpleParser*/stringify("clutch", car->_clutchCmd);
-stateString +=  /*SimpleParser*/stringify("curTime", (float)car->_curTime);
-    stateString +=  /*SimpleParser*/stringify("angle", angle);
-    stateString += /*SimpleParser*/stringify("curLapTime", float(car->_curLapTime));
+stateString +=  SimpleParser::stringify("accel", car->_accelCmd);
+stateString +=  SimpleParser::stringify("brake", car->_brakeCmd);
+stateString +=  SimpleParser::stringify("gear", car->_gearCmd);
+stateString += SimpleParser::stringify("gear2", car->_gear);
+stateString +=  SimpleParser::stringify("steer", car->_steerCmd);
+stateString +=  SimpleParser::stringify("clutch", car->_clutchCmd);
+stateString +=  SimpleParser::stringify("curTime", (float)car->_curTime);
+    stateString +=  SimpleParser::stringify("angle", angle);
+    stateString += SimpleParser::stringify("curLapTime", float(car->_curLapTime));
     if (getDamageLimit())
-	    stateString += /*SimpleParser*/stringify("damage", car->_dammage);
+	    stateString += SimpleParser::stringify("damage", car->_dammage);
     else
-	    stateString += /*SimpleParser*/stringify("damage", car->_fakeDammage);
-    stateString += /*SimpleParser*/stringify("distFromStart", car->race.distFromStartLine);
-    stateString += /*SimpleParser*/stringify("distRaced", distRaced[index]);
-    stateString += /*SimpleParser*/stringify("fuel", car->_fuel);
+	    stateString += SimpleParser::stringify("damage", car->_fakeDammage);
+    stateString += SimpleParser::stringify("distFromStart", car->race.distFromStartLine);
+    stateString += SimpleParser::stringify("distRaced", distRaced[index]);
+    stateString += SimpleParser::stringify("fuel", car->_fuel);
 
-    stateString += /*SimpleParser*/stringify("lastLapTime", float(car->_lastLapTime));
-    stateString += /*SimpleParser*/stringify("racePos", car->race.pos);
-    stateString += /*SimpleParser::*/stringify("opponents", oppSensorOut, 36);
-    stateString += /*SimpleParser*/stringify("rpm", car->_enginerpm*10);
-    stateString += /*SimpleParser*/stringify("speedX", float(car->_speed_x  * 3.6));
-    stateString += /*SimpleParser*/stringify("speedY", float(car->_speed_y  * 3.6));
-    stateString += /*SimpleParser*/stringify("speedZ", float(car->_speed_z  * 3.6));
-    stateString += /*SimpleParser*/stringify("track", trackSensorOut, 19);
-    stateString += /*SimpleParser*/stringify("trackPos", dist_to_middle);
-    stateString += /*SimpleParser*/stringify("wheelSpinVel", wheelSpinVel, 4);
-    stateString += /*SimpleParser*/stringify("z", car->_pos_Z  - RtTrackHeightL(&(car->_trkPos)));
-	stateString += /*SimpleParser*/stringify("focus", focusSensorOut, 5);//ML
+    stateString += SimpleParser::stringify("lastLapTime", float(car->_lastLapTime));
+    stateString += SimpleParser::stringify("racePos", car->race.pos);
+    stateString += SimpleParser::stringify("opponents", oppSensorOut, 36);
+    stateString += SimpleParser::stringify("rpm", car->_enginerpm*10);
+    stateString += SimpleParser::stringify("speedX", float(car->_speed_x  * 3.6));
+    stateString += SimpleParser::stringify("speedY", float(car->_speed_y  * 3.6));
+    stateString += SimpleParser::stringify("speedZ", float(car->_speed_z  * 3.6));
+    stateString += SimpleParser::stringify("track", trackSensorOut, 19);
+    stateString += SimpleParser::stringify("trackPos", dist_to_middle);
+    stateString += SimpleParser::stringify("wheelSpinVel", wheelSpinVel, 4);
+    stateString += SimpleParser::stringify("z", car->_pos_Z  - RtTrackHeightL(&(car->_trkPos)));
+	stateString += SimpleParser::stringify("focus", focusSensorOut, 5);//ML
 
     char line[5000];
     	sprintf(line,"%s\n",stateString.c_str());
@@ -1442,7 +1412,8 @@ stateString +=  /*SimpleParser*/stringify("curTime", (float)car->_curTime);
 	//strftime(cstr, sizeof(cstr), "%a %b %d %H:%M:%S %Y", timeinfo);
 	strftime(cstr, sizeof(cstr), "_%F_%H-%M-%S", timeinfo);
 	
-    	 char rootd[] = "/home/hiryugan/Documents/torcs/torcs-server/results/manual";
+    	 char rootd[] = "/home/hiryugan/Documents/torcs-server/results/manual";
+
 	strcat(rootd, cstr);
 	//printf("%s", fname);
 
