@@ -627,9 +627,9 @@ stateString +=  SimpleParser::stringify("steer", car->_steerCmd);
 stateString +=  SimpleParser::stringify("clutch", car->_clutchCmd);
 stateString +=  SimpleParser::stringify("curTime", (float)car->_curTime);
 //cout << "entro in angle" << endl;    
-stateString +=  SimpleParser::stringify("angle", angle);
+//stateString +=  SimpleParser::stringify("angle", angle);
 //cout << "finito angle" << endl;
-    stateString +=  SimpleParser::stringify("angle2", angle2);
+    stateString +=  SimpleParser::stringify("angle", angle2);
     stateString += SimpleParser::stringify("curLapTime", float(car->_curLapTime));
     if (getDamageLimit())
 	    stateString += SimpleParser::stringify("damage", car->_dammage);
