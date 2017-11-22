@@ -37,6 +37,13 @@
 #include "CarControl.h"
 #include "ObstacleSensors.h"
 
+#include <iostream>
+#include <iomanip>
+#include <ctime>
+#include <sstream>
+#include <cstring>
+#include <stdio.h>
+
 #ifdef _WIN32
 typedef sockaddr_in tSockAddrIn;
 typedef int socklen_t;
@@ -501,6 +508,42 @@ drive(int index, tCarElt* car, tSituation *s)
     char line[UDP_MSGLEN];
     sprintf(line,"%s",stateString.c_str());
     printf("quello che ho da c++ \n%s\n", line);
+
+time_t rawtime;
+	struct tm * timeinfo;
+
+	time (&rawtime);
+	timeinfo = localtime (&rawtime);
+	char cstr[512];    
+
+	//strftime(cstr, sizeof(cstr), "%a %b %d %H:%M:%S %Y", timeinfo);
+	strftime(cstr, sizeof(cstr), "_%F_%H-%M-%S", timeinfo);
+	
+    	 char rootd[] = "/home/hiryugan/Documents/torcs-server/results/manual";
+
+	strcat(rootd, cstr);
+	//printf("%s", fname);
+
+	FILE *fff;
+	static long int first = 0;
+	static char fname[512] = "";
+	static char to_write[2500000]="";
+    strcat(to_write, line);
+    if(first == 0){
+		strcat(fname, rootd);
+		//printf("%s",fname);
+		//fflush(stdin);
+		//fff = fopen (fname,"a");
+		//	fprintf(fff, "swe");
+	}
+    if (first % 49 == 0){
+        printf("saved %ld\n", first);
+        fff = fopen (fname,"a");
+        fprintf(fff,"%s",to_write);
+        fclose(fff);
+        to_write[0] = '\0';
+    }
+    first++;
 if (RESTARTING[index]==0)
 {
 #ifdef __UDP_SERVER_VERBOSE__

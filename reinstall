@@ -11,3 +11,6 @@ make datainstall
 ---
 sensors.cpp SimpleParser.cpp CarControl.cpp ObstacleSensors.cpp 
 
+
+src/libs/raceengineclient/racemain.cpp -> situation
+src/doc/architecture.md
