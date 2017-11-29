@@ -507,7 +507,8 @@ drive(int index, tCarElt* car, tSituation *s)
 
     char line[UDP_MSGLEN];
     sprintf(line,"%s",stateString.c_str());
-    printf("quello che ho da c++ \n%s\n", line);
+
+/*    printf("quello che ho da c++ \n%s\n", line);
 
 time_t rawtime;
 	struct tm * timeinfo;
@@ -543,7 +544,7 @@ time_t rawtime;
         fclose(fff);
         to_write[0] = '\0';
     }
-    first++;
+    first++;*/
 if (RESTARTING[index]==0)
 {
 #ifdef __UDP_SERVER_VERBOSE__

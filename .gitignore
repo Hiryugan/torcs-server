@@ -1,5 +1,6 @@
 ./server_err.txt
 ./server_out.txt
+results/
 
 # Created by https://www.gitignore.io/api/python
 
@@ -107,3 +108,6 @@ venv.bak/
 .mypy_cache/
 
 # End of https://www.gitignore.io/api/python
+
+*.o
+torcs-client)_shit backup/
