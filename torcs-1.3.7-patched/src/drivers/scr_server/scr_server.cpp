@@ -76,7 +76,7 @@ static int UDP_TIMEOUT = UDP_DEFAULT_TIMEOUT;
 #define NBBOTS 10
 
 #define RACE_RESTART 1
-//#define __STEP_LIMIT__ 10000
+#define __STEP_LIMIT__ 10000000
 //#define __DISABLE_RESTART__
 //#define __PRINT_RACE_RESULTS__
 
@@ -553,21 +553,21 @@ if (RESTARTING[index]==0)
 #endif
 
 #ifdef __STEP_LIMIT__
-    
+    //printf("tics %d", total_tics[index]);
     if (total_tics[index]>__STEP_LIMIT__)
     {
 	RESTARTING[index] = 1;
 	car->RESTART=1;
 
 	char fileName[200];
-	sprintf(fileName,"%s.txt",trackName);
-	printf("%s.txt\n",trackName);
-	FILE *f = fopen (fileName,"a");
+//	sprintf(fileName,"%s.txt", trackName);
+//	printf("%s.txt\n",trackName);
+	//FILE *f = fopen (fileName,"a");
 
-	printf("Dist_raced %lf\n",distRaced[index]);
-	fprintf(f,"Dist_raced %lf\n",distRaced[index]);
+	//printf("Dist_raced %lf\n",distRaced[index]);
+	//fprintf(f,"Dist_raced %lf\n",distRaced[index]);
 
-	fclose(f);
+	//fclose(f);
 	return;
     }
 #endif
@@ -663,7 +663,7 @@ else
 	fclose(fff);
 	*/
 
-    printf("alla fine i comandi sono invece %f %f %f %f %f\n", car->_accelCmd, car->_brakeCmd, car->_gearCmd, car->_steerCmd, car->_clutchCmd);
+    //printf("alla fine i comandi sono invece %f %f %f %f %f\n", car->_accelCmd, car->_brakeCmd, car->_gearCmd, car->_steerCmd, car->_clutchCmd);
 }
 
 /* End of the current race */
