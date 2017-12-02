@@ -139,7 +139,8 @@ ReStartNewRace(void * /* dummy */)
 static void reSelectRaceman(void *params)
 {
 	char *s, *e, *m;
-
+    
+    
 	ReInfo->params = params;
 	FREEZ(ReInfo->_reFilename);
 
@@ -158,6 +159,8 @@ static void reSelectRaceman(void *params)
 
 void ReRunRaceOnConsole(const char* raceconfig)
 {
+    
+    
 	ReInfo = (tRmInfo *)calloc(1, sizeof(tRmInfo));
 	ReInfo->s = (tSituation *)calloc(1, sizeof(tSituation));
 	ReInfo->modList = &ReRaceModList;
@@ -178,7 +181,10 @@ void ReRunRaceOnConsole(const char* raceconfig)
 	ReInfo->movieCapture.enabled = 0;
 
 	const char *s, *e, *m;
+	// bookmark2
 
+	
+	
 	ReInfo->params = GfParmReadFile(raceconfig, GFPARM_RMODE_STD);
 	if (ReInfo->params == 0) {
 		GfError("Could not open file: %s\n", raceconfig);
@@ -196,10 +202,17 @@ void ReRunRaceOnConsole(const char* raceconfig)
 	ReInfo->_reName = GfParmGetStr(ReInfo->params, RM_SECT_HEADER, RM_ATTR_NAME, "");
 
 	ReInitResults();
-
-	ReStateApply((void *) RE_STATE_EVENT_INIT);	
+    while(true) {
+        ReStateApply((void *) RE_STATE_EVENT_INIT);
+    }
+    
+    
 	GfParmReleaseHandle(ReInfo->params);
-	ReShutdown();
+    
+    
+//	ReShutdown();
+    
+    
 }
 
 
@@ -423,7 +436,7 @@ initPits(void)
 	}	
 
 	for (teamsIterator = teams.begin(); teamsIterator != teams.end(); ++teamsIterator) {
-		printf("----------------- %s\t%d\n", (teamsIterator->first).c_str(), teamsIterator->second); 
+		 
 	}
 	*/
 
@@ -820,13 +833,23 @@ void
 ReRaceCleanup(void)
 {
 	ReInfo->_reGameScreen = ReHookInit();
+    
+    
 	ReInfo->_reSimItf.shutdown();
+    
+    
 	if (ReInfo->_displayMode == RM_DISP_MODE_NORMAL) {
 		ReInfo->_reGraphicItf.shutdowncars();
 		startMenuMusic();
 	}
+    
+    
 	ReStoreRaceResults(ReInfo->_reRaceName);
+    
+    
 	ReRaceCleanDrivers();
+    
+    
 }
 
 

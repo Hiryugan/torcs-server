@@ -2,7 +2,7 @@
 
     file        : racemain.h
     created     : Sat Nov 16 12:14:57 CET 2002
-    copyright   : (C) 2002 by Eric Espié                        
+    copyright   : (C) 2002 by Eric Espiï¿½                        
     email       : eric.espie@torcs.org   
     version     : $Id: racemain.h,v 1.3 2004/04/05 18:25:00 olethros Exp $                                  
 
@@ -29,6 +29,7 @@
 extern int  ReRaceEventInit(void);
 extern int  RePreRace(void);
 extern int  ReRaceStart(void);
+extern int  ReRaceRestart(void);
 extern int  ReRaceStop(void);
 extern int  ReRaceEnd(void);
 extern int  RePostRace(void);

@@ -41,6 +41,7 @@
 #include "racemanmenu.h"
 
 #include "racemain.h"
+#include "../../interfaces/raceman.h"
 
 /***************************************************************/
 /* ABANDON RACE HOOK */
@@ -107,9 +108,14 @@ int
 ReRaceEventInit(void)
 {
 	void *params = ReInfo->params;
-
+    
+    
 	RmLoadingScreenStart(ReInfo->_reName, "data/img/splash-qrloading.png");
+    
+    
 	ReInitTrack();
+    
+    
 	if (
 		(ReInfo->_displayMode != RM_DISP_MODE_CONSOLE) &&
 		(ReInfo->_reGraphicItf.inittrack != 0)
@@ -117,13 +123,20 @@ ReRaceEventInit(void)
 		RmLoadingScreenSetText("Loading Track 3D Description...");
 		ReInfo->_reGraphicItf.inittrack(ReInfo->track);
 	};
+    
+    
 	ReEventInitResults();
 
+    
+    
 	if (
 		(GfParmGetEltNb(params, RM_SECT_TRACKS) > 1) &&
 		(ReInfo->_displayMode != RM_DISP_MODE_NONE) &&
 		(ReInfo->_displayMode != RM_DISP_MODE_CONSOLE)
 	) {
+
+        
+        
 		ReNewTrackMenu();
 		return RM_ASYNC | RM_NEXT_STEP;
 	}
@@ -515,11 +528,28 @@ static void* QuitHookInit(void)
 	return QuitHookHandle;
 }
 
+int ReRaceRestart(void){
+//    ReInfo->_reGraphicItf.muteformenu();
+    return RM_ASYNC | RM_NEXT_STEP;
+}
+
 
 int ReRaceStop(void)
 {
+
+    
+    
+    
+	
+	
+	
+	
+	
+	
 	void	*params = ReInfo->params;
+	printf("1.Hello world!");
 	ReInfo->_reGraphicItf.muteformenu();
+	printf("1.Hello world!");
 	if (RESTART!=1) {
 		if (!strcmp(GfParmGetStr(params, ReInfo->_reRaceName, RM_ATTR_ALLOW_RESTART, RM_VAL_NO), RM_VAL_NO)) {
 			StopScrHandle = RmTriStateScreen("Race Stopped",

@@ -1,0 +1,3 @@
+/home/hiryugan/Documents/torcs-server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/hiryugan/Documents/torcs-server/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/hiryugan/Documents/torcs-server/cmake-build-debug/CMakeFiles/torcs_server.dir

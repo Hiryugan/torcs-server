@@ -325,7 +325,7 @@ racemain.o: racemain.cpp /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/portability.h \
  /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/config.h \
  raceengine.h raceinit.h racegl.h raceresults.h racestate.h racemanmenu.h \
- racemain.h
+ racemain.h ../../interfaces/raceman.h
 racemanmenu.o: racemanmenu.cpp /usr/include/stdc-predef.h \
  /usr/include/stdlib.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -700,7 +700,8 @@ raceengine.o: raceengine.cpp /usr/include/stdc-predef.h \
  /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/robottools.h \
  /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/export/include/portability.h \
  /home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/config.h \
- racemain.h racegl.h raceinit.h raceresults.h raceengine.h
+ racemain.h racegl.h raceinit.h raceresults.h raceengine.h \
+ ../../interfaces/raceman.h ../../interfaces/car.h
 raceresults.o: raceresults.cpp /usr/include/stdc-predef.h \
  /usr/include/stdlib.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \

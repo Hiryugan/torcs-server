@@ -58,7 +58,13 @@ ReStateManage(void)
 	int mode = RM_SYNC | RM_NEXT_STEP;
 
 	do {
-		switch (ReInfo->_reState) {
+        
+        
+        
+        
+        int a = ReInfo->_reState;
+        
+		switch (a) {
 			case RE_STATE_CONFIG:
 				GfOut("RaceEngine: state = RE_STATE_CONFIG\n");
 				/* Display the race specific menu */
@@ -69,9 +75,15 @@ ReStateManage(void)
 				break;
 
 			case RE_STATE_EVENT_INIT:
+                
+                
 				GfOut("RaceEngine: state = RE_STATE_EVENT_INIT\n");
 				/* Load the event description (track and drivers list) */
+                
+                
 				mode = ReRaceEventInit();
+                
+                
 				if (mode & RM_NEXT_STEP) {
 					ReInfo->_reState = RE_STATE_PRE_RACE;
 				}
@@ -94,27 +106,55 @@ ReStateManage(void)
 				break;
 
 			case RE_STATE_RACE:
+				
+				
 				mode = ReUpdate();
+				
+				
 				if (ReInfo->s->_raceState == RM_RACE_ENDED) {
 					/* race finished */
+					
+					
 					ReInfo->_reState = RE_STATE_RACE_END;
 				} else if (mode & RM_END_RACE) {
 					/* interrupt by player */
+					
+					
 					ReInfo->_reState = RE_STATE_RACE_STOP;
 				}
+                
+                
 				break;
 
 			case RE_STATE_RACE_STOP:
+
 				GfOut("RaceEngine: state = RE_STATE_RACE_STOP\n");
 				/* Interrupted by player */
-				mode = ReRaceStop();
+
+				if (RESTART == 1){
+					mode = ReRaceRestart();
+				} else {
+					mode = ReRaceStop();
+				}
+				
+                
 				if (mode & RM_NEXT_STEP) {
+                    
+                    
 					if (RESTART==1)
 					{
 						RESTART=0;
+                        
+                        
 						ReRaceCleanup();
+                        
+                        
 						ReInfo->_reState = RE_STATE_PRE_RACE;
-						GfuiScreenActivate(ReInfo->_reGameScreen);
+                        
+                        
+//						GfuiScreenActivate(ReInfo->_reGameScreen);
+                        
+                        
 					}
 					else
 					{
@@ -169,10 +209,15 @@ ReStateManage(void)
 				exit (0);		/* brutal isn't it ? */
 				break;
 		}
-
+        
+        
+        
+        
 	} while ((mode & (RM_SYNC | RM_QUIT)) == RM_SYNC);
-
+    
+    
 	if (mode & RM_QUIT) {
+
 		GfScrShutdown();
 		exit (0);		/* brutal isn't it ? */
 	}

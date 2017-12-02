@@ -1,0 +1,1693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="torcs_server"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/hiryugan/Documents/torcs-server/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/hiryugan/Documents/torcs-server/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/hiryugan/Documents/torcs-server/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="torcs_server">
+				<Option output="/home/hiryugan/Documents/torcs-server/cmake-build-debug/torcs_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hiryugan/Documents/torcs-server/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 torcs_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="torcs_server/fast">
+				<Option output="/home/hiryugan/Documents/torcs-server/cmake-build-debug/torcs_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hiryugan/Documents/torcs-server/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 torcs_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hiryugan/Documents/torcs-server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/config.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/resource.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/doc/torcsdoc.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw/berniw.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw/berniw.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw/linalg.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw/mycar.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw/mycar.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw/pathfinder.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw/pathfinder.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw/spline.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw/spline.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw/trackdesc.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw/trackdesc.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw2/berniw.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw2/berniw2.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw2/linalg.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw2/mycar.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw2/mycar.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw2/pathfinder.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw2/pathfinder.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw2/spline.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw2/spline.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw2/trackdesc.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw2/trackdesc.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw3/berniw.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw3/berniw3.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw3/linalg.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw3/mycar.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw3/mycar.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw3/pathfinder.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw3/pathfinder.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw3/spline.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw3/spline.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw3/trackdesc.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/berniw3/trackdesc.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/bt.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/cardata.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/cardata.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/driver.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/driver.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/learn.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/learn.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/opponent.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/opponent.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/pit.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/pit.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/spline.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/spline.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/strategy.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/bt/strategy.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/cardata.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/cardata.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/damned.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/driver.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/driver.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/learn.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/learn.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/opponent.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/opponent.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/pit.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/pit.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/spline.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/spline.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/strategy.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/damned/strategy.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/human/CarControl.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/human/CarControl.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/human/ObstacleSensors.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/human/ObstacleSensors.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/human/SimpleParser.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/human/SimpleParser.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/human/human.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/human/human.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/human/pref.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/human/pref.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/human/sensors.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/human/sensors.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/inferno/berniw.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/inferno/inferno.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/inferno/mycar.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/inferno/mycar.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/inferno/pathfinder.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/inferno/pathfinder.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/inferno/spline.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/inferno/spline.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/inferno/trackdesc.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/inferno/trackdesc.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/inferno2/common.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/inferno2/common.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/inferno2/inferno2.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/CarControl.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/CarControl.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/ObstacleSensors.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/ObstacleSensors.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/SimpleParser.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/SimpleParser.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/berniw.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/lliaw.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/mycar.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/mycar.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/pathfinder.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/pathfinder.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/sensors.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/sensors.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/spline.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/spline.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/trackdesc.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/lliaw/trackdesc.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/TrackData.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/TrackData.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/Trajectory.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/Trajectory.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/cardata.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/cardata.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/driver.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/driver.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/geometry.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/geometry.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/learn.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/learn.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/linalg.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/olethros.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/opponent.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/opponent.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/pit.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/pit.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/spline.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/spline.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/strategy.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/olethros/strategy.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/scr_server/CarControl.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/scr_server/CarControl.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/scr_server/ObstacleSensors.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/scr_server/ObstacleSensors.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/scr_server/SimpleParser.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/scr_server/SimpleParser.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/scr_server/scr_server.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/scr_server/sensors.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/scr_server/sensors.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/sparkle/driver.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/sparkle/driver.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/sparkle/linalg.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/sparkle/opponent.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/sparkle/opponent.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/sparkle/pit.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/sparkle/pit.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/sparkle/sparkle.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/sparkle/spline.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/sparkle/spline.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/tita/berniw.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/tita/mycar.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/tita/mycar.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/tita/pathfinder.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/tita/pathfinder.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/tita/spline.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/tita/spline.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/tita/tita.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/tita/trackdesc.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/drivers/tita/trackdesc.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/interfaces/car.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/interfaces/graphic.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/interfaces/playerpref.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/interfaces/raceman.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/interfaces/replay.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/interfaces/robot.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/interfaces/simu.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/interfaces/telemetry.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/interfaces/track.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/client/client.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/client/entry.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/client/errno.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/client/exitmenu.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/client/exitmenu.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/client/mainmenu.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/client/mainmenu.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/client/optionmenu.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/client/optionmenu.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/client/splash.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/client/splash.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/controlconfig.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/controlconfig.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/driverconfig.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/driverconfig.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/graphconfig.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/graphconfig.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/joystickconfig.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/joystickconfig.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/mouseconfig.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/mouseconfig.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/openglconfig.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/openglconfig.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/simuconfig.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/simuconfig.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/soundconfig.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/confscreens/soundconfig.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/ANN.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/ANN.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/Distribution.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/Distribution.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/List.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/List.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/MathFunctions.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/MathFunctions.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/ann_policy.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/ann_policy.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/learn_debug.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/policy.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/policy.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/real.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/string_utils.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/learning/string_utils.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/math/linalg_t.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/math/straight2_t.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/math/v2_t.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/math/v3_t.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/math/v4_t.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/musicplayer/OggSoundStream.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/musicplayer/OggSoundStream.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/musicplayer/OpenALMusicPlayer.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/musicplayer/OpenALMusicPlayer.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/musicplayer/SoundStream.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/musicplayer/SoundStream.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/musicplayer/musicplayer.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/musicplayer/musicplayer.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/portability/portability.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/raceengine.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/raceengine.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/racegl.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/racegl.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/raceinit.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/raceinit.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/racemain.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/racemain.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/racemanmenu.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/racemanmenu.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/raceresults.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/raceresults.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/racestate.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/racestate.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/singleplayer.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/raceengineclient/singleplayer.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/racescreens/carsetupscreen.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/racescreens/driverselect.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/racescreens/fileselect.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/racescreens/loadingscreen.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/racescreens/miscscreens.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/racescreens/pitmenu.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/racescreens/racemenu.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/racescreens/racescreens.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/racescreens/results.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/racescreens/trackselect.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/robottools/robottools.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/robottools/rttelem.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/robottools/rttrack.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgf/directory.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgf/hash.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgf/module.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgf/os.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgf/os.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgf/params.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgf/profiler.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgf/tgf.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgf/tgf.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgf/trace.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/control.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/fg_gm.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/fg_gm.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/glfeatures.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/glfeatures.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/gui.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/gui.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/guibutton.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/guiedit.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/guifont.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/guifont.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/guihelp.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/guiimage.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/guilabel.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/guimenu.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/guimenu.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/guiobject.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/guiscrollbar.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/guiscrollist.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/img.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/screen.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/screen_properties.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/tgfclient.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/tgfclient/tgfclient.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/asciitab.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/codepage.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/dllmain.c">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/filemap.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/gennmtab.c">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/gennmtab/gennmtab.c">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/hashtable.c">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/hashtable.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/iasciitab.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/latin1tab.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/nametab.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/utf8tab.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/xml.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/xml.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/xmldef.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/xmlparse.c">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/xmlparse.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/xmlrole.c">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/xmlrole.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/xmltok.c">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/xmltok.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/xmltok_impl.c">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/libs/txml/xmltok_impl.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/linux/linuxspec.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/linux/linuxspec.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/linux/main.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/linux/osspec.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/misc/png2jpg/png2jpg.c">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/CarSoundData.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/CarSoundData.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/OpenalSoundInterface.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/PlibSoundInterface.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/QSoundChar.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/SoundInterface.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/SoundInterface.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/TorcsSound.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/TorcsSound.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grboard.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grboard.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grcam.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grcam.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grcar.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grcar.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grcarlight.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grcarlight.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grloadac.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grloadsgi.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grmain.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grmain.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grmultitexstate.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grmultitexstate.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grscene.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grscene.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grscreen.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grscreen.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grshadow.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grshadow.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grskidmarks.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grskidmarks.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grsmoke.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grsmoke.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grsound.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grsound.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grssgext.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grtexture.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grtexture.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grtrackmap.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grtrackmap.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grutil.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grutil.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grvertexarray.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grvtxtable.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/grvtxtable.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/sound_defines.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/graphic/ssggraph/ssggraph.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/include/3D/Basic.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/include/3D/Matrix.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/include/3D/Point.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/include/3D/Quaternion.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/include/3D/Tuple3.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/include/3D/Tuple4.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/include/3D/Vector.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/include/SOLID/solid.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/AlgoTable.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/BBox.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/BBoxTree.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/BBoxTree.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Box.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Box.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/C-api.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Complex.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Complex.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Cone.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Cone.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Convex.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Convex.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Cylinder.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Cylinder.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Encounter.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Endpoint.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Endpoint.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/IndexArray.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Object.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Object.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Polygon.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Polygon.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Polyhedron.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Polyhedron.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Polytope.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/RespTable.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/RespTable.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Response.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Response.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Shape.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Simplex.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Simplex.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Sphere.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Sphere.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Transform.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/Transform.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/SOLID-2.0/src/VertexBase.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/aero.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/aero.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/axle.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/axle.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/brake.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/brake.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/car.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/carstruct.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/categories.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/collide.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/differential.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/differential.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/engine.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/engine.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/sim.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/simu.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/simuitf.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/steer.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/steer.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/susp.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/susp.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/transmission.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/transmission.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/wheel.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv2/wheel.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/Options.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/SimulationOptions.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/SimulationOptions.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/aero.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/aero.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/axle.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/axle.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/brake.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/brake.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/car.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/carstruct.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/categories.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/collide.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/differential.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/differential.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/engine.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/engine.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/sim.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/simu.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/simuitf.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/steer.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/steer.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/susp.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/susp.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/transmission.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/transmission.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/wheel.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/simu/simuv3/wheel.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/telemetry/telemetry.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/telemetry/telemetryitf.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/telemetry/tlm.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/track/track.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/track/track3.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/track/track4.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/track/trackinc.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/track/trackitf.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/modules/track/trackutil.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/accc/ac3dgroup.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/accc/ac3dload.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/accc/accc.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/accc/mainaccc.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/nfs2ac/mainnfs2ac.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/nfsperf/mainnfsperf.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/texmapper/maintexmapper.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/texmapper/ssgLocal.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/texmapper/ssgSaveAC.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/ac3d.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/ac3d.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/easymesh.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/easymesh.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/elevation.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/elevation.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/maintrackgen.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/objects.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/objects.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/raceline.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/relief.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/relief.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/track.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/trackgen.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/util.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/tools/trackgen/util.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/AL/al.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/AL/alc.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/AL/alctypes.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/AL/altypes.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/AL/alut.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/GL/glext.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/GL/glut.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/GL/wglext.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/ogg/ogg.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/ogg/os_types.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/js.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/sg.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/sl.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/slPortability.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/sm.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/ssg.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/ssgAux.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/ssgaFire.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/ssgaLensFlare.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/ssgaParticleSystem.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/ssgaScreenDump.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/ssgaShapes.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/ssgaWaveSystem.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/ssgconf.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/plib/ul.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/png.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/pngconf.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/pnglibconf.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/vorbis/codec.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/vorbis/vorbisenc.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/vorbis/vorbisfile.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/zconf.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/include/zlib.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/main.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/osspec.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/windowsspec.cpp">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/torcs-1.3.7-patched/src/windows/windowsspec.h">
+			<Option target="torcs_server"/>
+		</Unit>
+		<Unit filename="/home/hiryugan/Documents/torcs-server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

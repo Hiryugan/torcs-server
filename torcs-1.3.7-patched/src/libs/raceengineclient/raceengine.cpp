@@ -38,6 +38,8 @@
 #include "raceresults.h"
 
 #include "raceengine.h"
+#include "../../interfaces/raceman.h"
+#include "../../interfaces/car.h"
 
 static double	msgDisp;
 static double	bigMsgDisp;
@@ -404,7 +406,7 @@ static void ReSortCars(void)
     {
 		if (s->cars[i]->RESET==1)
 		{
-			//printf("******* RESETTING *****\n");
+			//
 			ReInfo->_reSimItf.config(s->cars[i], ReInfo);		
 			s->cars[i]->RESET=0;
 			sprintf(buf, "RELOADING");
@@ -412,16 +414,18 @@ static void ReSortCars(void)
 		}
 		if (s->cars[i]->RESTART==1)
 		{
-			printf("******* RESTARTING *****\n");
+			
 			RESTART = 1;
 			s->cars[i]->RESTART=0;
+
+            
 		}
     }
-
     if (RESTART == 1)
     {
 		ReInfo->_reState = RE_STATE_RACE_STOP;
     }
+    
 }
 
 
@@ -668,11 +672,22 @@ ReOneStep(double deltaTimeIncrement)
 
 	START_PROFILE("rbDrive*");
 	if ((s->currentTime - ReInfo->_reLastTime) >= RCM_MAX_DT_ROBOTS) {
+        
+        
 		s->deltaTime = s->currentTime - ReInfo->_reLastTime;
 		for (i = 0; i < s->_ncars; i++) {
+            
+            
 			if ((s->cars[i]->_state & RM_CAR_STATE_NO_SIMU) == 0) {
-				robot = s->cars[i]->robot;
+                
+                
+                
+				robot = reinterpret_cast<tRobotItf *>(s->cars[i]->robot);
+                
+                
 				robot->rbDrive(robot->index, s->cars[i], s);
+                
+                
 			}
 		}
 		ReInfo->_reLastTime = s->currentTime;
@@ -751,6 +766,7 @@ ReUpdate(void)
 			START_PROFILE("ReOneStep*");
 			while ((ReInfo->_reRunning && ((t - ReInfo->_reCurTime) > RCM_MAX_DT_SIMU)) && MAXSTEPS > i++) {
 				ReOneStep(RCM_MAX_DT_SIMU);
+				// bookmark
 			}
 			STOP_PROFILE("ReOneStep*");
 
@@ -794,6 +810,8 @@ ReUpdate(void)
 			while ((t - ReInfo->_reCurTime + 2.0) > 0.0) {
 				ReOneStep(RCM_MAX_DT_SIMU);
 			}
+			
+			
 			mode = RM_SYNC;
 			break;
 

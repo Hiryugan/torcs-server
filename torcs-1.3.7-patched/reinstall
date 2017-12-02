@@ -1,0 +1,8 @@
+sudo rm -rf /usr/local/lib/torcs &&
+rm -rf /usr/local/share/games/torcs/ &&
+make clean &&
+make distclean &&
+./configure &&
+make &&
+sudo make install &&
+make datainstall
