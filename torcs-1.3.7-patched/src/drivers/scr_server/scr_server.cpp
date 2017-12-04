@@ -241,7 +241,8 @@ newrace(int index, tCarElt* car, tSituation *s)
     serverAddress[index].sin_family = AF_INET;
     serverAddress[index].sin_addr.s_addr = htonl(INADDR_ANY);
     serverAddress[index].sin_port = htons(UDP_LISTEN_PORT+index);
-
+    int enable = 1;
+    setsockopt(listenSocket[index], SOL_SOCKET, SO_REUSEADDR, &enable, sizeof(int));
     if (bind(listenSocket[index],
              (struct sockaddr *) &serverAddress[index],
              sizeof(serverAddress[index])) < 0)
